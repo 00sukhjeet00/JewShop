@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: whitesmoke;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eccc14;
+    padding-bottom: 1rem;
+}
+nav h2{
+    color:white;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+nav h3{
+    color:white;
+    margin-right: 1rem;
+        margin-top: 0.5rem;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    background: white;
+    width: 300px;
+    border-radius: 5%;
+    height: 420px;
+    animation: animate 2s linear infinite;
+}
+.card:hover{
+    box-shadow: 5px 5px 10px gray;
+}
+.card-body{
+    display: grid;
+    place-items: center;
+}
+button{
+    background-color: #FFD700;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0rem;
+    font-weight: bolder;
+    color: white;
+}
+button:hover{
+    background: #e4c424;
+}
+.Gcontainer{
+    display: flex;
+    flex-direction:column ;
+    width: 50%;
+    margin: auto;
+    place-items: center;
+    margin-top: 5rem;
+}
+@keyframes animate {
+    50%{
+        box-shadow: 5px 5px 10px gray;
+    }
+
+}
+.upload{
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 40%;
+    border-radius: 5% ;
+    padding: 2rem 0;
+    animation: animate 2s infinite;
+}
+.upload div{
+    margin-top: 2rem;
+}
+label{
+    margin-right: 1rem;
+}
+@media screen and (max-width:800px) {
+    form{
+        width: 100%;
+    }
+}
