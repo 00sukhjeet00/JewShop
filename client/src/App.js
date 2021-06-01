@@ -10,6 +10,7 @@ function App() {
       <div className="App">
         <nav>
           <Link to="/" style={{ "textDecoration": "none" }}><h2>Jewl</h2></Link>
+          {localStorage.getItem('token') && <Link to="/dashboard" style={{ "textDecoration": "none" }}><h2>home</h2></Link>}
         </nav>
         <Route exact component={HomeScreen} path="/" />
         <Route component={AuthState(Dashboard)} path="/dashboard" />
